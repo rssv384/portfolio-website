@@ -1,0 +1,52 @@
+@import "../styles/variables";
+
+header {
+  width: 95%;
+  height: 4rem;
+  margin: auto;
+
+  padding: 1rem 0;
+  font-size: 1.5rem;
+
+  border-bottom: thin solid $secondary-color;
+
+  img {
+    height: 4rem;
+    width: 4rem;
+  }
+
+  nav {
+    ul {
+      display: block;
+      text-transform: uppercase;
+      list-style: none;
+      padding: 0;
+      text-align: center;
+      margin: 0;
+    }
+
+    li {
+      display: inline;
+      padding: 0.5rem 1.5rem;
+      transition: color 0.5s ease;
+
+      &:hover {
+        background: lighten($color: $background-color, $amount: 10);
+
+        a {
+          text-decoration: underline;
+        }
+      }
+
+      a {
+        text-decoration: none;
+        color: $primary-color;
+      }
+
+      .active {
+        font-weight: bolder;
+        color: darken($color: $secondary-color, $amount: 5);
+      }
+    }
+  }
+}

@@ -1,0 +1,66 @@
+@import "variables";
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: $background-color;
+  color: $primary-color;
+  font-family: $body-font;
+}
+
+h1,
+h2,
+h3 {
+  color: $secondary-color;
+  font-family: $title-font;
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+h2 {
+  font-size: 2.25rem;
+}
+
+h3 {
+  font-size: 1.5rem;
+}
+
+// TEXT ALIGNMENT
+.text-right {
+  text-align: right;
+}
+
+.text-center {
+  text-align: center;
+}
+
+// FLEX LAYOUT CLASSES
+.flex-row {
+  display: flex;
+  flex-direction: row;
+}
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.flex-space-between {
+  justify-content: space-between;
+}
+
+.flex-center {
+  justify-content: center;
+}
+
+.flex-items-center {
+  align-items: center;
+}
