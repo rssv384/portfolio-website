@@ -6,3 +6,7 @@ $secondary-color: #d9d1c7;
 
 $title-font: "Barlow Condensed", serif;
 $body-font: "Cantarell", sans-serif;
+
+$header-height: 4rem;
+$footer-height: 4rem;
+$main-area-min-height: calc(100vh - $header-height - $footer-height);
