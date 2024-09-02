@@ -1,21 +1,29 @@
 @import "../styles/variables";
 
 header {
-  width: 95%;
+  width: 100%;
   height: $header-height;
-  margin: auto;
-
   padding: 1rem 0;
   font-size: 1.5rem;
-
   border-bottom: thin solid $secondary-color;
+  background-color: $background-color;
+
+  // Fixed position, always on top
+  position: fixed;
+  top: 0;
+  z-index: 10;
+
+  box-shadow: 0 2px 2px 1px lighten($color: $background-color, $amount: 10);
 
   img {
     height: 4rem;
     width: 4rem;
+    margin-left: 2rem;
   }
 
   nav {
+    margin-right: 2rem;
+
     ul {
       display: block;
       text-transform: uppercase;
