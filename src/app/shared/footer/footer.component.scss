@@ -2,9 +2,9 @@
 
 footer {
   width: 95%;
-  height: $footer-height;
+  height: fit-content;
   margin: auto;
-  padding: 1rem;
+  padding-top: 1rem;
   border-top: thin solid $secondary-color;
 }
 
@@ -14,6 +14,10 @@ footer {
   .fa {
     font-size: 2rem;
     color: $primary-color;
+
+    &:hover {
+      color: darken($color: $secondary-color, $amount: 7);
+    }
   }
 }
 
@@ -27,5 +31,9 @@ footer {
 }
 
 a {
-  color: $secondary-color;
+  color: darken($color: $secondary-color, $amount: 7);
+
+  &:hover {
+    color: $secondary-color;
+  }
 }
