@@ -8,5 +8,6 @@ $title-font: "Barlow Condensed", serif;
 $body-font: "Cantarell", sans-serif;
 
 $header-height: 4rem;
-$content-top-padding: calc($header-height + 2rem);
-$main-area-min-height: calc(100vh - $content-top-padding);
+$footer-height: 8rem;
+$content-top-spacing: calc($header-height + 2rem);
+$main-area-min-height: calc(100vh - $content-top-spacing - $footer-height);

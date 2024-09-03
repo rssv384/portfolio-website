@@ -16,7 +16,7 @@ body {
 
 main {
   min-height: $main-area-min-height;
-  padding-top: $content-top-padding;
+  padding-top: $header-height;
 }
 
 h1,
@@ -27,7 +27,7 @@ h3 {
 }
 
 h1 {
-  font-size: 3rem;
+  font-size: 10rem;
 }
 
 h2 {
