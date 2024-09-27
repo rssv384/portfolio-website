@@ -12,6 +12,7 @@ body {
   background-color: $background-color;
   color: $primary-color;
   font-family: $body-font;
+  font-size: 1.1rem;
 }
 
 main {
@@ -21,7 +22,8 @@ main {
 
 h1,
 h2,
-h3 {
+h3,
+h4 {
   color: $secondary-color;
   font-family: $title-font;
 }
@@ -31,11 +33,39 @@ h1 {
 }
 
 h2 {
-  font-size: 2.25rem;
+  font-size: 4rem;
 }
 
 h3 {
-  font-size: 1.5rem;
+  font-size: 2.5rem;
+}
+
+h4 {
+  font-size: 1.75rem;
+  margin-bottom: 0.5rem;
+}
+
+hr {
+  border: 0;
+  height: 2px;
+  width: 25%;
+  margin: 1rem auto;
+  background-image: linear-gradient(
+    to right,
+    rgba(217, 209, 199, 0),
+    rgba(217, 209, 199, 0.75),
+    rgba(217, 209, 199, 0)
+  );
+}
+
+a {
+  color: darken($color: $secondary-color, $amount: 7);
+  text-decoration: none;
+
+  &:hover {
+    color: $secondary-color;
+    text-decoration: underline;
+  }
 }
 
 // TEXT ALIGNMENT
@@ -58,14 +88,22 @@ h3 {
   flex-direction: column;
 }
 
-.flex-space-between {
+.justify-space-between {
   justify-content: space-between;
 }
 
-.flex-center {
+.justify-space-evenly {
+  justify-content: space-evenly;
+}
+
+.justify-center {
   justify-content: center;
 }
 
-.flex-items-center {
-  align-items: center;
+.align-content-center {
+  align-content: center;
+}
+
+.align-content-start {
+  align-content: start;
 }

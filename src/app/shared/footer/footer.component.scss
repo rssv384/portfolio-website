@@ -6,9 +6,11 @@ footer {
   margin: auto;
   padding-top: 1rem;
   border-top: thin solid $secondary-color;
+  justify-content: center;
 }
 
 .socials {
+  width: 100%;
   gap: 2rem;
 
   .fa {
@@ -27,13 +29,5 @@ footer {
 
   p {
     margin: 0.5rem;
-  }
-}
-
-a {
-  color: darken($color: $secondary-color, $amount: 7);
-
-  &:hover {
-    color: $secondary-color;
   }
 }
