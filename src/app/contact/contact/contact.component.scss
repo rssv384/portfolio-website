@@ -1,0 +1,85 @@
+@import "../../shared/styles/variables";
+
+.heading {
+  h2 {
+    margin-bottom: 1rem;
+  }
+
+  p {
+    margin: auto 0;
+  }
+}
+
+.card {
+  background-color: transparent;
+  width: 500px;
+  height: 300px;
+  perspective: 1000;
+  margin: 2rem auto;
+}
+
+.card-content {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+  box-shadow: 6px 10px 2px 0px darken($color: $secondary-color, $amount: 15);
+}
+
+.card:hover .card-content {
+  transform: rotateY(180deg);
+}
+
+.card-front,
+.card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.card-front {
+  background-color: $primary-color;
+  color: black;
+
+  .card-logo {
+    filter: invert(1);
+  }
+}
+
+.card-back {
+  background-color: $primary-color;
+  color: $background-color;
+  transform: rotateY(180deg);
+
+  h2 {
+    color: darken($color: $secondary-color, $amount: 25);
+    margin: 0;
+  }
+
+  h4 {
+    font-weight: 400;
+    letter-spacing: -1px;
+    color: $background-color;
+    margin: 0;
+  }
+
+  p {
+    color: $background-color;
+    margin-bottom: 3rem;
+  }
+}
+
+.contact-links {
+  .fa {
+    font-size: 2.5rem;
+    color: darken($color: $secondary-color, $amount: 15);
+
+    &:hover {
+      color: darken($color: $secondary-color, $amount: 20);
+    }
+  }
+}
